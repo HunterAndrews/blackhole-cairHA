@@ -132,7 +132,7 @@ double sum_array_with_stride(const float *data, size_t length, size_t stride){
     double sum = 0.0;   // initialize sum to 0.0
 
     for (size_t i = 0; i < stride; i++){    // iterate through array, starting at the beginning and advancing by stride
-        for (size_t j = 0; j < stride; j += stride){        // iterate through stride elements
+        for (size_t j = i; j < length; j += stride){        // iterate through stride elements
             sum += data[j];     // add the value to the sum
         }
     }

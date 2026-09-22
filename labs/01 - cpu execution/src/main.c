@@ -204,7 +204,7 @@ int main(void){
     //              effective GB/s = useful bytes moved / elapsed seconds / 1000000000.0
 
     // ||YOUR CODE GOES BELOW HERE||:
-    printf("\n=== Copy Bandwidth ===\n");
+    printf("\nCopy Bandwidth\n");
 
     start = benchmark_time_seconds();   // start timer
 
